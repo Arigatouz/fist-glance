@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body">
     <h1>Hello From the product page</h1>
     <input
       type="text"
@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  layout: 'users',
   data() {
     return {
       productNumber: '',
@@ -30,4 +31,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+.body {
+  margin: 5px 20px;
+}
+</style>
