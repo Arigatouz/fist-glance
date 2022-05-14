@@ -7,6 +7,13 @@
 
 <script>
 export default {
+  name: `SpecificPage`,
+  validate(data) {
+    console.log(data)
+    console.log(data.app.head.title)
+    // this regex to make sure that the params is a Number
+    return /^\d+$/.test(data.params.id)
+  },
   data() {
     return {
       products: '/products',
